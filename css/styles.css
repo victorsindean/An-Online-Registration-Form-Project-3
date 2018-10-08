@@ -27,6 +27,7 @@ form {
   padding-right: 30px;
   font-family: 'Merriweather', serif;
   background-color: #f9ecec;
+  border-radius: 25px;
 }
 
 fieldset {
@@ -67,7 +68,7 @@ input[type="number"],
 textarea,
 #state {
 
-  background: whitesmoke;
+  background: white;
   border: none;
   font-size: 16px;
   margin: 0;
@@ -96,11 +97,13 @@ textarea {
 input[type=text]:focus,
 input[type="email"]:focus,
 input[type="number"]:focus,
-textarea:focus {
+textarea:focus,
+#state:focus {
 
   transition: ease-in-out 0.30s;
   background-color: aliceblue;
   border: 2px solid black;
+
 }
 
 ::-webkit-input-placeholder {
