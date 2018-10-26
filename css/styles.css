@@ -219,16 +219,20 @@ textarea {
   fieldset.one input {
     display: inline-block;
     text-align: left;
-    width: 70%;
+    width: 72%;
   }
 
   #state {
-    width: 74%;
+    width: 75%;
     font-size: 100%;
   }
 
   #zip {
     width: 20%;
+  }
+
+  textarea {
+    width: 96%;
   }
 
   * {
