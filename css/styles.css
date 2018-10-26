@@ -73,8 +73,6 @@ label {
 }
 
 
-
-
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -91,14 +89,6 @@ textarea,
   color: #8a97a0;
   margin-bottom: 30px;
   border-radius: 5px;
-}
-textarea {
-  width: 96%;
-
-}
-
-#state {
-  width: 75%;
 }
 
 
