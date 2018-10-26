@@ -27,9 +27,6 @@ p {
 }
 
 form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   margin: 10px auto;
   max-width: 400px;
   padding: 20px;
@@ -80,9 +77,11 @@ label {
 
 input[type="text"],
 input[type="email"],
+input[type="tel"],
 input[type="number"],
 textarea,
 #state {
+  transition: ease-in-out 0.30s;
   background: white;
   border: none;
   font-size: 16px;
@@ -103,19 +102,12 @@ textarea {
 }
 
 
-
-#zip {
-  width: 20%;
-
-}
-
 input[type=text]:focus,
 input[type="email"]:focus,
+input[type="tel"]:focus,
 input[type="number"]:focus,
 textarea:focus,
 #state:focus {
-
-  transition: ease-in-out 0.30s;
   background-color: aliceblue;
   border: 2px solid black;
 
@@ -128,8 +120,8 @@ textarea:focus,
 
 
 .input-group {
-  margin-top:10px;
-  width:60%;
+  margin-top: 20px;
+  width: 60%;
   margin-bottom: 30px;
 }
 
@@ -163,64 +155,86 @@ button {
   margin-bottom: 20px;
 }
 
+form {
+  font-size: 70%;
+}
+
+::-webkit-input-placeholder {
+  font-size: 70%;
+}
+
+fieldset.one label {
+  display: inline-block;
+  min-width: 15%;
+  margin-bottom: 10px;
+  width: 40%;
+}
+
+fieldset.one input {
+  display: inline-block;
+  text-align: left;
+  width: 93%;
+}
+
+#state {
+  font-size: 99%;
+  width: 100%;
+}  
+
+
+textarea {
+  width: 92%;
+}
+
+#zip {
+  width: 45%;
+}
+
+
+.copy {
+  margin-top: 30px;
+  font-style: italic;
+  margin-bottom: 10px;
+  opacity: 0.5;
+}
+
 @media(min-width: 768px) {
 
   form {
+    font-size: 90%;
     max-width: 800px;
+  }
+
+  ::-webkit-input-placeholder {
+    font-size: 90%;
   }
 
   fieldset.one label {
     display: inline-block;
     min-width: 15%;
-    margin-top: 5px;
+    margin-bottom: 5px;
     width: 20%
   }
 
   fieldset.one input {
     display: inline-block;
-    text-align: right;
+    text-align: left;
+    width: 70%;
+  }
+
+  #state {
+    width: 74%;
+    font-size: 100%;
+  }
+
+  #zip {
+    width: 20%;
   }
 
   * {
     clear: both;
   }
 
-
-
 }
 
-@media(max-width: 768px) {
-  form {
-    font-size: 70%;
-  }
 
-  ::-webkit-input-placeholder {
-    font-size: 70%;
- }
-
-  fieldset.one label {
-    display: inline-block;
-    min-width: 15%;
-    margin-bottom: 10px;
-    width: 40%;
-  }
-
-  fieldset.one input {
-    display: inline-block;
-    text-align: right;
-    width: 93%;
-  }
-
-  #state {
-    font-size: 99%;
-    width: 100%;
-  }  
-  #zip {
-    width: 93%;
-  }
-
-  textarea {
-    width: 93%;
-  }
-
-}
